@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.testimonials {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f0f3e6;
+}
+.testimonials h2 {
+    font-size: 33px;
+    color: #0f5897;
+    margin-bottom: 67px;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3 ); /* Tăng độ mờ và đậm của bóng */
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+.testimonial img {
+    border-radius: 50%;
+    max-width: 80px;
+    margin: 0 auto 20px auto; /* Căn giữa hình ảnh với margin auto */
+    display: block; /* Đảm bảo hình ảnh là phần tử cấp khối */
+}
+
+.testimonial .name {
+    font-weight: bold;
+    color: #c0282d;
+    margin-bottom: 10px;
+    text-align: center; /* Căn giữa tên */
+    font-style: italic;
+}
+
+.testimonial p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center; /* Căn giữa đoạn văn */
+}
+
+/*  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px; /* Reduce the gap slightly to balance the increased width */
+    padding: 6% 10%; /* Reduce padding to accommodate wider cards */
+}
+
+.card {
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    width: 400px; /* Increase the width of the cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Ensures the cards grow to fill available space equally */
+}
+
+.card-header_phai {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100px;
+    position: relative;
+}
+
+/* Adjusted the font size for the .lt-text or .epl-text if you want */
+.lt-text, .epl-text {
+    font-size: 5.5rem; /* Adjust font size to match the new card width */
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+.card-header_trai {
+    background-color: #00bfa5; /* Green background */
+    color: white;
+    flex: 2; /* Increase this value to give more space to the left side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 60%;
+    padding-right: 10%; /* Increase padding for more spacing */
+}
+
+.title {
+    font-style: italic; /* Italicize the text */
+    margin-bottom: -25px; /* Move the title closer to the subtitle */
+    font-size: 1rem; /* Adjust size if needed */
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.3rem; /* Make the second line text larger */
+    letter-spacing: 2px; /* Add spacing between letters to make the line appear longer */
+    color: yellow;
+}
+
+.card-header_phai {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    min-width: 80px; /* Decrease this value to make the right part narrower */
+    position: relative;
+}
+
+.lt-text {
+    font-style: italic;
+    font-size: 5rem; /* Decrease the size of the text */
+    font-weight: bold;
+    color: #0097a7; /* Main text color */
+    -webkit-text-stroke: 2px #007d8b; /* Outline color */
+    text-shadow: 2px 2px 0 #007d8b;
+    position: relative;
+    display: inline-block;
+    margin-left: -30px; /* Adjust the left margin to bring the text closer to the left */
+}
+
+.lt-text::before {
+    content: "EPL";
+    position: absolute;
+    left: -15px; /* Adjust this value to control the shadow's position */
+    top: 20px; /* Adjust this value to control the shadow's position */
+    color: #00bcd4; /* Shadow-like background color */
+    z-index: -1;
+}
+.epl-text {
+    font-style: italic;
+    font-size: 5rem; /* Size of the text */
+    font-weight: bold;
+    color: #003366; /* Dark blue for the main text color */
+    -webkit-text-stroke: 2px #004080; /* Dark blue outline color */
+    text-shadow: 2px 2px 0 #66b2ff; /* Light blue shadow */
+    position: relative;
+    display: inline-block;
+    margin-left: -30px; /* Adjust the left margin */
+}
+
+.epl-text::before {
+    content: "EPL";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    color: #66b2ff; /* Light blue shadow-like background color */
+    z-index: -1;
+}
+.card-header_trai.right {
+    background-color: #007bb5; /* Blue background for the right card */
+    color: white;
+    flex: 2; /* Increase this value to give more space to the left side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 60%;
+    padding-right: 10%; /* Increase padding for more spacing */
+}
+
+.title.right {
+    font-style: italic; /* Italicize the text */
+    margin-bottom: -25px; /* Move the title closer to the subtitle */
+    font-size: 1rem; /* Adjust size if needed */
+}
+
+.subtitle.right {
+    font-style: italic;
+    font-size: 1.3rem; /* Make the second line text larger */
+    letter-spacing: 2px; /* Add spacing between letters to make the line appear longer */
+    color: yellow;
+}
+.card-body {
+    padding: 20px;
+    flex-grow: 1; /* Allows the card body to take up the remaining space, making the cards equal in height */
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-body ul li i {
+    margin-right: 10px;
+    color: #ffa500;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-footer button {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card-footer button:hover {
+    background-color: yellow;
+    color: black;
+}
+/*  */
+
+.top-bar {
+    background-color: #007b8f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.top-bar a {
+    color:  #F1C096;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.top-bar a:hover {
+    color: rgb(247, 245, 245);
+}
+/*  */
+.content {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between images and text */
+    margin-left: 10%; /* Add margin to the left for alignment */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+}
+
+.logo, .mobifone-logo {
+    max-width: 120px; /* Adjust width as needed */
+    max-height: 100px; /* Limit the height of the images */
+    width: auto; /* Maintain aspect ratio */
+    margin: 5px 0; /* Space between images */
+    vertical-align: middle;
+}
+
+.info {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+.mau{
+    color:  #c39541;
+}
+

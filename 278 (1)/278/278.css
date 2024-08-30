@@ -1,0 +1,829 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    .topnav {
+      background-color: #d3c5a1;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      height: 8%;
+      display: flex;
+      align-items: center;            /* Căn giữa theo chiều dọc */
+      justify-content: space-evenly;  /* Căn đều các phần tử, bao gồm cả khoảng cách tới hai bên lề */
+  }
+  
+  .logo {
+      height: 50px;
+  }
+  
+  .topnav a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+  }
+  
+  .topnav a:hover {
+      color: blue;
+  }
+  
+  .topnav a.active {
+      color: yellow;
+  }
+  
+  #content_gioi_thieu {
+      height: 400px;
+      padding-top: 50px;
+  }
+  
+  #content_gioi_thieu::after {
+      content: " ";
+      clear: both;
+      display: block;
+  }
+  #noi_dung{
+    float: left;
+    width: 40%;
+    margin-left: 120px;
+  }
+  #video{
+    float: right;
+    width: 40%;
+    height: 200px;
+    margin-right: 120px;
+  }
+  #btn_dky{
+    background: linear-gradient(to right, #FFC107, #4CAF50);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150px;
+    border-radius: 5px;
+    
+  }
+  #btn_dky1{
+    background: linear-gradient(to right, #FFC107, #4CAF50);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top:  20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    margin-right: 20%;
+    /* margin: 20px auto; Center the button horizontally and adjust margin */
+    border-radius: 5px;
+  }
+    
+  #btn_dky1 a {
+    text-decoration: none;
+  }
+    
+  #btn_dky a{
+    text-decoration: none;
+  }
+  #btn_dky:hover{
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    background: linear-gradient(to right, #FF9800, #388E3C);
+  }
+  h1{
+    text-align: center;
+    color: #0061AF;
+    font-weight: bold;
+  }
+  
+  #content_uu_loi{
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #F0F3E9;
+  }
+  #content_uu_loi::after{
+    content: " ";
+    clear: both;
+    display: block;
+  }
+  .cot-1{
+    float: left;
+    width: 33%;
+    margin-left: 200px;
+  }
+  .cot-1 p{
+    text-align: justify;
+  }
+  .cot-2{
+    float: right;
+    width: 35%;
+    margin-right: 150px;
+    
+  }
+    .cot-1 p , .cot-2 p{
+    font-size: 18px;
+  }
+  .cot-2 p{
+    text-align: justify;
+  }
+  #content_hoc{
+    padding-top: 50px;
+    margin-left: 10%;
+  }
+  #content_hoc::after{
+    content: " ";
+    clear: both;
+    display: block;
+  }
+  .hoc-1{
+    float: left;
+    width: 15%;
+  }
+  .hoc{
+    float: left;
+    width: 15%;
+    margin-left:10%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .testimonials {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f0f3e6;
+  }
+  .testimonials h2 {
+    font-size: 33px;
+    color: #0f5897;
+    margin-bottom: 67px;
+  }
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3 ); /* Tăng độ mờ và đậm của bóng */
+    padding: 20px;
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  .testimonial img {
+    border-radius: 50%;
+    max-width: 80px;
+    margin: 0 auto 20px auto; /* Căn giữa hình ảnh với margin auto */
+    display: block; /* Đảm bảo hình ảnh là phần tử cấp khối */
+  }
+  
+  .testimonial .name {
+    font-weight: bold;
+    color: #c0282d;
+    margin-bottom: 10px;
+    text-align: center; /* Căn giữa tên */
+    font-style: italic;
+  }
+  
+  .testimonial p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify; /* Căn giữa đoạn văn */
+    font-weight: 16pt;
+  }
+  
+  /*  */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px; /* Khoảng cách giữa các card */
+    padding: 6% 10%; /* Padding xung quanh */
+    flex-wrap: wrap; /* Cho phép các card xuống dòng khi cần */
+  }
+  
+  .card {
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    width: 400px; /* Chiều rộng của các card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Đảm bảo các card trải đều trong không gian có sẵn */
+  }
+  
+  .card-header_phai {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100px;
+    position: relative;
+  }
+  
+  /* Adjusted the font size for the .lt-text or .epl-text if you want */
+  .lt-text, .epl-text {
+    font-size: 5.5rem; /* Adjust font size to match the new card width */
+  }
+  .epl-text,.lt-text{
+    letter-spacing: -0.09em;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+  }
+  
+  .card-header_trai {
+    background-color: #00bfa5; /* Green background */
+    color: white;
+    flex: 2; /* Increase this value to give more space to the left side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 60%;
+    padding-right: 10%; /* Increase padding for more spacing */
+  }
+  
+  .title {
+    font-style: italic; /* Italicize the text */
+    margin-bottom: -25px; /* Move the title closer to the subtitle */
+    font-size: 1rem; /* Adjust size if needed */
+  }
+  
+  .subtitle {
+    font-style: italic;
+    font-size: 1.3rem; /* Make the second line text larger */
+    letter-spacing: 2px; /* Add spacing between letters to make the line appear longer */
+    color: yellow;
+  }
+  
+  .card-header_phai {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    min-width: 80px; /* Decrease this value to make the right part narrower */
+    position: relative;
+  }
+  
+  .lt-text {
+    font-style: italic;
+    font-size: 5rem; /* Decrease the size of the text */
+    font-weight: bold;
+    color: #0097a7; /* Main text color */
+    -webkit-text-stroke: 2px #007d8b; /* Outline color */
+    text-shadow: 2px 2px 0 #007d8b;
+    position: relative;
+    display: inline-block;
+    margin-left: -30px; /* Adjust the left margin to bring the text closer to the left */
+  }
+  
+  .lt-text::before {
+    content: "EPL";
+    position: absolute;
+    left: -15px; /* Adjust this value to control the shadow's position */
+    top: 20px; /* Adjust this value to control the shadow's position */
+    color: #00bcd4; /* Shadow-like background color */
+    z-index: -1;
+  }
+  .epl-text {
+    font-style: italic;
+    font-size: 5rem; /* Size of the text */
+    font-weight: bold;
+    color: #003366; /* Dark blue for the main text color */
+    -webkit-text-stroke: 2px #004080; /* Dark blue outline color */
+    text-shadow: 2px 2px 0 #66b2ff; /* Light blue shadow */
+    position: relative;
+    display: inline-block;
+    margin-left: -30px; /* Adjust the left margin */
+  }
+  
+  .epl-text::before {
+    content: "EPL";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    color: #66b2ff; /* Light blue shadow-like background color */
+    z-index: -1;
+  }
+  .card-header_trai.right {
+    background-color: #007bb5; /* Blue background for the right card */
+    color: white;
+    flex: 2; /* Increase this value to give more space to the left side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 60%;
+    padding-right: 10%; /* Increase padding for more spacing */
+  }
+  
+  .title.right {
+    font-style: italic; /* Italicize the text */
+    margin-bottom: -25px; /* Move the title closer to the subtitle */
+    font-size: 1rem; /* Adjust size if needed */
+  }
+  
+  .subtitle.right {
+    font-style: italic;
+    font-size: 1.3rem; /* Make the second line text larger */
+    letter-spacing: 2px; /* Add spacing between letters to make the line appear longer */
+    color: yellow;
+  }
+  .card-body {
+    padding: 20px;
+    flex-grow: 1; /* Allows the card body to take up the remaining space, making the cards equal in height */
+  }
+  
+  .card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .card-body ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-body ul li i {
+    margin-right: 10px;
+    color: #ffa500;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .card-footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-footer button {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .card-footer button:hover {
+    background-color: yellow;
+    color: black;
+  }
+  /*  */
+  
+  .top-bar {
+    background-color: #007b8f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+  }
+  
+  .top-bar a {
+    color:  #F1C096;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .top-bar a:hover {
+    color: rgb(247, 245, 245);
+  }
+  /*  */
+  .footer_tren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer_trai,
+.footer_phai {
+    width: 45%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_trai {
+    text-align: left; /* Align text to the left */
+    padding-left: 5%; /* Indent from the left by 5% */
+}
+
+.footer_phai {
+    text-align: left; /* Align text to the left */
+    margin-left: 5%; /* Indent from the vertical line by 5% */
+}
+
+.footer_tren::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 70%; /* Adjust height to match content */
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*  */
+.footer_duoi {
+  display: flex;
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center;            /* Center items vertically */
+  padding: 10px 20px;             /* Adjust padding as needed */
+  box-sizing: border-box;         /* Include padding in the width */
+}
+
+.footer_duoi > div {
+  flex: 1;                       /* Allow items to grow and shrink equally */
+  text-align: center;            /* Center the content within each section */
+  margin: 0 15px;                /* Add horizontal space between items */
+}
+
+.footer_duoi_img img,
+.footer_duoi_img1 img,
+.footer_duoi_img2 img {
+  max-width: 80%; /* Make images smaller to fit within their containers */
+  height: auto;   /* Maintain aspect ratio */
+}
+
+
+
+  
+  
+  @media only screen and (max-width: 768px) {
+    /* General adjustments for small screens */
+    body{
+      overflow-x: hidden;
+    }
+    #logo_mobiedu{
+      display: none;
+    }
+    #content_gioi_thieu{
+      height: 100%;
+    }
+    .topnav {
+      display: flexbox;
+      justify-content: space-evenly;
+      height: auto; /* Allow flexible height */
+      padding: 5% 0; /* Adjust padding */
+    }
+    
+    #btn_dky1{
+      background: linear-gradient(to right, #FFC107, #4CAF50);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-top:  20px;
+      margin-bottom: 20px;
+      margin-left: 20%;
+      margin-right: 20%;
+      /* margin: 20px auto; Center the button horizontally and adjust margin */
+      border-radius: 5px;
+    }
+
+    .topnav a {
+      display: none; /* Hide all links */
+    }
+  
+    .logo {
+      height: -1%; /* Adjust the logo size as a percentage of the height */
+    }
+  
+    /* For the logo section with only two logos centered */
+    .content {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center align all content */
+      margin-left: 0; /* Remove left margin */
+      padding: 5% 0; /* Adjust padding */
+    }
+  
+    .image-container {
+      display: flex;
+      flex-direction: row; /* Arrange logos side by side */
+      justify-content: center; /* Center logos horizontally */
+      gap: 5%; /* Space between the two logos */
+      width: 80%; /* Adjust width to ensure logos fit */
+    }
+  
+    .logo1, .mobifone-logo {
+      max-width: 20%; /* Reduce size to fit within percentage width */
+      max-height: 15%; /* Maintain aspect ratio */
+    }
+  
+    /* For stacking the other sections vertically */
+    #noi_dung, #video {
+      float: none; /* Disable floating */
+      width: 90%; /* Full width with padding */
+      margin: 0 auto; /* Center align */
+      text-align: justify; /* Center the text if needed */
+    }
+  
+    /* Adjust the button for smaller screens */
+    #btn_dky {
+      margin: 5% 10%; /* Center the button and adjust margin */
+      width: 80%; /* Make the button wider on smaller screens */
+      text-align: center; /* Center the button text */
+    }
+  
+    /* Adjust columns in content sections */
+    .cot-1, .cot-2 {
+      float: none; /* Disable floating */
+      width: 90%; /* Full width with padding */
+      margin: 0 auto; /* Center align */
+      text-align: center; /* Center the text */
+      padding: 5% 0; /* Adjust padding */
+    }
+  
+    
+    /* Adjusting content spacing and alignment */
+    .hoc-1, .hoc {
+      float: none; /* Disable floating */
+      width: 90%; /* Full width with padding */
+      margin: 0 auto; /* Center align */
+      text-align: center; /* Center the text */
+      padding: 5% 0; /* Adjust padding */
+      margin-left: 0;
+    }
+  
+    /* Adjust the testimonials section */
+    .testimonials {
+      padding: 5% 0; /* Reduce padding */
+    }
+  
+    .testimonial-container {
+      flex-direction: column; /* Stack testimonials vertically */
+      align-items: center; /* Center the testimonials */
+      width: 90%; /* Adjust width to ensure testimonials fit */
+    }
+  
+    .testimonial {
+      width: 100%; /* Full width with padding */
+    }
+
+    /* containeer */
+    .card-header_phai {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Căn chỉnh chữ sang bên trái */
+      min-width: 80px; /* Chiều rộng tối thiểu của phần bên phải */
+      position: relative;
+    }
+    
+    .lt-text, .epl-text {
+      font-size: 5.5rem; /* Kích thước chữ */
+    }
+    
+    .epl-text {
+      letter-spacing: -0.09em; /* Khoảng cách giữa các ký tự */
+    }
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 0;
+    }
+    
+    .card-header_trai {
+      background-color: #00bfa5; /* Nền màu xanh lá cây */
+      color: white;
+      flex: 2; /* Chiếm nhiều không gian hơn phía bên trái */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+      height: 60%;
+      padding-right: 10%; /* Padding bên phải lớn hơn */
+    }
+    
+    .title {
+      font-style: italic; /* Chữ nghiêng */
+      margin-bottom: -25px; /* Khoảng cách giữa tiêu đề và phụ đề */
+      font-size: 1rem; /* Kích thước chữ */
+    }
+    
+    .subtitle {
+      font-style: italic;
+      font-size: 1rem; /* Kích thước chữ lớn hơn cho dòng phụ đề */
+      letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+      color: yellow;
+    }
+    
+    .card-header_phai {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Căn chỉnh chữ sang bên trái */
+      min-width: 80px; /* Chiều rộng tối thiểu của phần bên phải */
+      position: relative;
+    }
+    
+    .lt-text {
+      font-style: italic;
+      font-size: 4rem; /* Kích thước chữ */
+      font-weight: bold;
+      color: #0097a7; /* Màu chữ chính */
+      -webkit-text-stroke: 2px #007d8b; /* Màu viền chữ */
+      text-shadow: 2px 2px 0 #007d8b;
+      position: relative;
+      display: inline-block;
+      margin-left: -30px; /* Điều chỉnh khoảng cách bên trái */
+    }
+    
+    .lt-text::before {
+      content: "EPL";
+      position: absolute;
+      left: -15px; /* Điều chỉnh vị trí bóng chữ */
+      top: 20px; /* Điều chỉnh vị trí bóng chữ */
+      color: #00bcd4; /* Màu nền giống bóng chữ */
+      z-index: -1;
+    }
+    
+    .epl-text {
+      font-style: italic;
+      font-size: 4rem; /* Kích thước chữ */
+      font-weight: bold;
+      color: #003366; /* Màu xanh dương đậm cho chữ chính */
+      -webkit-text-stroke: 2px #004080; /* Màu viền chữ xanh dương đậm */
+      text-shadow: 2px 2px 0 #66b2ff; /* Bóng chữ xanh dương nhạt */
+      position: relative;
+      display: inline-block;
+      margin-left: -30px; /* Điều chỉnh khoảng cách bên trái */
+    }
+    
+    .epl-text::before {
+      content: "EPL";
+      position: absolute;
+      left: -15px;
+      top: 20px;
+      color: #66b2ff; /* Màu nền giống bóng chữ xanh dương nhạt */
+      z-index: -1;
+    }
+    
+    .card-header_trai.right {
+      background-color: #007bb5; /* Nền màu xanh dương cho card bên phải */
+      color: white;
+      flex: 2; /* Chiếm nhiều không gian hơn phía bên trái */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+      height: 60%;
+      padding-right: 10%; /* Padding bên phải lớn hơn */
+    }
+    
+    .title.right {
+      font-style: italic; /* Chữ nghiêng */
+      margin-bottom: -25px; /* Khoảng cách giữa tiêu đề và phụ đề */
+      font-size: 1rem; /* Kích thước chữ */
+    }
+    
+    .subtitle.right {
+      font-style: italic;
+      font-size: 1rem; /* Kích thước chữ lớn hơn cho dòng phụ đề */
+      letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+      color: yellow;
+    }
+    
+    .card-body {
+      padding: 20px;
+      flex-grow: 1; /* Cho phép phần nội dung card chiếm không gian còn lại, làm cho các card có chiều cao bằng nhau */
+    }
+    
+    .card-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    
+    .card-body ul li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .card-body ul li i {
+      margin-right: 10px;
+      color: #ffa500;
+    }
+    
+    .price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #333;
+    }
+    
+    .card-footer {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .card-footer button {
+      background-color: #007bb5;
+      color: white;
+      padding: 10px 20px;
+      border: none; /* Loại bỏ đường viền */
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    
+    .card-footer button:hover {
+      background-color: yellow;
+      color: black;
+    }
+    /* Adjust the footer logos */
+    .top-bar{
+      display: none;
+    }
+    .footer_tren {
+      flex-direction: column; /* Stack the divs vertically */
+      align-items: center; /* Center the content */
+  }
+
+  .footer_trai, .footer_phai {
+      width: 100%; /* Make the divs full-width */
+      margin-bottom: 20px; /* Add some space between them */
+  }
+
+  .footer_phai {
+      margin-bottom: 0; /* Remove bottom margin for the last div */
+  }
+  .footer_tren::after {
+    display: none;
+    width: 1px;
+    height: 70%; /* Adjust height to match content */
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer_duoi {
+  text-align: center; /* Center the content */
+  padding: 20px;
+}
+
+.footer_duoi_infor {
+  margin-bottom: 20px; /* Add space between the text and the images */
+  font-size: 16px; /* Adjust font size if needed */
+  font-weight: bold; /* Make the text bold */
+}
+
+.footer_duoi_img, .footer_duoi_img1, .footer_duoi_img2 {
+  display: inline-block; /* Make the images align horizontally */
+  margin: 0 10px; /* Add space between the images */
+}
+
+.footer_duoi_img img, .footer_duoi_img1 img, .footer_duoi_img2 img {
+  max-width: 100%; /* Adjust the size of the icons if needed */
+}
+.footer_duoi_img2{
+  display: none;
+}
+  }
+  
+  
